@@ -67,10 +67,10 @@ public class AddUser {
 		u.getCreateBtn().click();
 	}
 
-	@Then("user should be created")
-	public void user_should_be_created() throws InterruptedException {
+	@Then("user should be created as {string},{string}")
+	public void user_should_be_created_as(String firstname, String lastname) throws InterruptedException {
 		Thread.sleep(2000);
-		Assert.assertEquals(u.getCreatedUser().getText(), "Dingi, Dinga");
+		Assert.assertEquals(u.getCreatedUser().getText(), lastname+", "+firstname);
 	}
 
 	@And("click on created user")

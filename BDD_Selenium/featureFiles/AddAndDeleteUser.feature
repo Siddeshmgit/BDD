@@ -10,7 +10,7 @@ Then User tab page should be displayed
 And he clicks on add user button
 And He enters "<firstname>","<lastname>","<email>","<username>", "<password>","<retypePwd>"
 And clicks on create user button
-Then user should be created
+Then user should be created as "<firstname>","<lastname>"
 And click on created user 
 And click on delete button
 Then alert popup should be displayed and click on ok button in the popup
@@ -20,3 +20,4 @@ Examples:
 
 |firstname |lastname| email| username |password |retypePwd|
 | Dinga| Dingi | dinga@123|DINGA | DINGI | DINGI|
+|Pavan|Shukla|Pavanshukla@123|PAVAN|Shukla|Shukla|
