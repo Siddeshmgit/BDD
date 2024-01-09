@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		features = "featureFiles",
-		glue="stepdefinitions", dryRun = false
+		glue={"stepdefinitions","hooks"}, dryRun = false
 		,plugin = "html:target/output.html",
 		tags="@actitime"
 )
